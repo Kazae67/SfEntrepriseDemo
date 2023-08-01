@@ -6,6 +6,7 @@
     <h1>Détail d'une entreprise</h1>
     <h2>{{ entreprise }}</h2>
     <p>
-    Adresse : {{ entreprise.adresse}}
+    Adresse : {{ entreprise.adresseComplete }} <br>
+    Date de création : {{ entreprise.dateCreation | date("d.m.Y") }}
     </p>
 {% endblock %}
